@@ -78,14 +78,5 @@ table, th, td {
 
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    <!-- JavaScript to handle form submission and display the input value -->
-    <script>
-        document.querySelector('form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const userInput = document.querySelector('#userInput').value;
-            const resultDiv = document.querySelector('#result');
-            resultDiv.textContent = `You entered: ${userInput}`;
-        });
-    </script>
 </body>
 </html>
