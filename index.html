@@ -1,1 +1,31 @@
-GG
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Example</title>
+</head>
+<body>
+    <h1>Input Box Example</h1>
+    
+    <form>
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Display the input value -->
+    <div id="result"></div>
+
+    <!-- JavaScript to handle form submission and display the input value -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const userInput = document.querySelector('#userInput').value;
+            const resultDiv = document.querySelector('#result');
+            resultDiv.textContent = `You entered: ${userInput}`;
+        });
+    </script>
+</body>
+</html>
+
